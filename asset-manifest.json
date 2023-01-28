@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/coffeewallet/static/css/main.0bc979cf.css",
-    "main.js": "/coffeewallet/static/js/main.761eef73.js",
+    "main.css": "/coffeewallet/static/css/main.f4562ac7.css",
+    "main.js": "/coffeewallet/static/js/main.c902c6f9.js",
     "static/media/starbucks.png": "/coffeewallet/static/media/starbucks.08cb0133161ad54e8f7a.png",
     "static/media/colorado.jpg": "/coffeewallet/static/media/colorado.7e7618399b3e92ee857c.jpg",
     "static/media/spotcoffee.jpg": "/coffeewallet/static/media/spotcoffee.69de40cdfaee0c9ed0b3.jpg",
@@ -13,11 +13,11 @@
     "static/media/seattles.jpg": "/coffeewallet/static/media/seattles.08c4b4312f7878fadc2c.jpg",
     "static/media/langano.jpg": "/coffeewallet/static/media/langano.3eeed43012233caa4b78.jpg",
     "index.html": "/coffeewallet/index.html",
-    "main.0bc979cf.css.map": "/coffeewallet/static/css/main.0bc979cf.css.map",
-    "main.761eef73.js.map": "/coffeewallet/static/js/main.761eef73.js.map"
+    "main.f4562ac7.css.map": "/coffeewallet/static/css/main.f4562ac7.css.map",
+    "main.c902c6f9.js.map": "/coffeewallet/static/js/main.c902c6f9.js.map"
   },
   "entrypoints": [
-    "static/css/main.0bc979cf.css",
-    "static/js/main.761eef73.js"
+    "static/css/main.f4562ac7.css",
+    "static/js/main.c902c6f9.js"
   ]
 }
