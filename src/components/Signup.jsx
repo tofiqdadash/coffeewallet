@@ -17,15 +17,9 @@ const Signup = () => {
           alignItems="center"
           justifyContent={"center"}
           margin="auto"
-          marginTop={10}
+          marginTop={1}
           padding={3}
           borderRadius={5}
-          // boxShadow={"5px 5px 10px #ccc"}
-          // sx={{
-          //   ":hover": {
-          //     boxShadow: "10px 10px 20px #ccc",
-          //   },
-          // }}
         >
           <Typography variant="h3" padding={3} textAlign="center">
             {isSignUp ? "Sign up" : "Login"}

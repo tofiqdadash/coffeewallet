@@ -6,17 +6,32 @@ body {
   font-family: 'Libre Baskerville', serif;
   font-family: 'Poppins', sans-serif;
   font-family: 'Roboto', sans-serif;
+  width: 100vw;
+  height: 100vh;
 }
 
+.App{
+  display: flex;
+   flex-direction: column;
+   width: 100vw;
+   height: 100vh;
+}
+
+.App .pages{
+  height: 100%;
+  width: 100%;
+}
+
+
 /*Home section hero*/
-.our-app {
+ .our-app {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 2rem;
   margin-bottom: 6rem;
   padding-right: 26px;
-}
+} 
 
 .our-app img {
   width: 40%;
@@ -29,15 +44,11 @@ body {
 
 /*About us*/
 .about {
-  height: 100vh;
+  height: 100%;
   display: flex;
-  padding: 1rem;
-  background-color: #d5cea3;
+  padding: 15px;
 }
 
-.about .content {
-  padding-top: 15rem;
-}
 
 .about h2 {
   color: #3c2a21;
@@ -53,6 +64,8 @@ body {
   padding: 0 16px;
   position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -175,4 +188,11 @@ body {
   background-color: white;
   padding: 1rem;
   border-radius: 5px;
+}
+
+
+@media screen and (max-width: 500px) {
+  .main-footer {
+    flex-direction: column;
+  }
 }

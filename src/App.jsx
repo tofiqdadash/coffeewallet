@@ -8,21 +8,27 @@ import Signup from "./components/Signup";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import NavBar from "./components/navbar1/NavBar";
+import { BrowserRouter as Router } from "react-router-dom";
+
 
 function App() {
   return (
+    <Router>
     <LocalizationProvider dateAdapter={AdapterDateFns}>
       <div className="App">
         <NavBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/partners" element={<OurPartners />} />
-          <Route path="/signup" element={<Signup />} />
-        </Routes>
+        <div className="pages">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/partners" element={<OurPartners />} />
+            <Route path="/signup" element={<Signup />} />
+          </Routes>
+        </div>
         <Footer />
       </div>
     </LocalizationProvider>
+    </Router>
   );
 }
 
