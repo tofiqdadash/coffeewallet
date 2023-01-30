@@ -26,20 +26,35 @@ body {
 /*Home section hero*/
  .our-app {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   margin-top: 2rem;
   margin-bottom: 6rem;
   padding-right: 26px;
 } 
 
-.our-app img {
-  width: 40%;
+.our-app .product{
+  display: flex;
+  align-items: center;
+}
+
+.our-app .app-version {
+  width: 30%;
 }
 
 .our-app h3 {
   font-weight: 400;
   font-size: 1.2rem;
+}
+
+.download-app img{
+ width: 100px;
+ margin-left: 10px;
+}
+
+.download-app {
+  display: flex;
+  margin-bottom: 4rem;
 }
 
 /*About us*/
@@ -59,36 +74,19 @@ body {
 }
 
 /*Footer*/
-.main-footer {
+ .main-footer {
   color: black;
-  padding: 0 16px;
   position: fixed;
-  bottom: 0;
   left: 0;
-  right: 0;
+  bottom: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   border-top: 1px solid gray;
   background-color: #d5cea3;
-}
+  z-index: 2;
+} 
 
-.main-footer img {
-  width: 100px;
-  height: 40px;
-}
-
-.main-footer .download-app {
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.main-footer img:last-child {
-  margin-right: 16px;
-  margin-left: 10px;
-}
 
 .main-footer button {
   color: black;
@@ -96,64 +94,13 @@ body {
   outline: none;
   background: transparent;
   cursor: pointer;
+  margin-right: 16px;
 }
 
-/*Apply for partnership modal*/
-.apply-partnership-modal {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 10000;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.main-footer p{
+  margin-left: 16px;
 }
 
-.apply-partnership-modal form {
-  padding: 2rem 4rem;
-  background-color: #d5cea3;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.apply-partnership-modal form div {
-  margin-bottom: 15px;
-}
-
-.apply-partnership-modal button {
-  background-color: rgb(60, 163, 60);
-  color: white;
-}
-
-.apply-partnership-modal button:hover {
-  background-color: rgb(53, 182, 53);
-  color: white;
-}
-
-.apply-partnership-modal h4 {
-  text-align: center;
-  color: #3c2a21;
-  font-size: 1.5rem;
-}
-
-.apply-partnership-modal i {
-  font-size: 2rem;
-  position: absolute;
-  right: 20px;
-  top: 10px;
-  cursor: pointer;
-  color: #3c2a21;
-}
 
 /*SIGN UP / LOGIN*/
 .signup-form-content {
@@ -190,9 +137,3 @@ body {
   border-radius: 5px;
 }
 
-
-@media screen and (max-width: 500px) {
-  .main-footer {
-    flex-direction: column;
-  }
-}
