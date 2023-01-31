@@ -2,38 +2,37 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #E5E5CB;
-  font-family: 'Libre Baskerville', serif;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Roboto', sans-serif;
+  background-color: #e5e5cb;
+  font-family: "Libre Baskerville", serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 100vw;
   height: 100vh;
 }
 
-.App{
+.App {
   display: flex;
-   flex-direction: column;
-   width: 100vw;
-   height: 100vh;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App .pages{
+.App .pages {
   height: 100%;
   width: 100%;
 }
 
-
 /*Home section hero*/
- .our-app {
+.our-app {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 6rem;
   padding-right: 26px;
-} 
+}
 
-.our-app .product{
+.our-app .product {
   display: flex;
   align-items: center;
 }
@@ -47,9 +46,9 @@ body {
   font-size: 1.2rem;
 }
 
-.download-app img{
- width: 100px;
- margin-left: 10px;
+.download-app img {
+  width: 100px;
+  margin-left: 10px;
 }
 
 .download-app {
@@ -64,7 +63,6 @@ body {
   padding: 15px;
 }
 
-
 .about h2 {
   color: #3c2a21;
 }
@@ -74,7 +72,7 @@ body {
 }
 
 /*Footer*/
- .main-footer {
+.main-footer {
   color: black;
   position: fixed;
   left: 0;
@@ -85,8 +83,7 @@ body {
   border-top: 1px solid gray;
   background-color: #d5cea3;
   z-index: 2;
-} 
-
+}
 
 .main-footer button {
   color: black;
@@ -97,24 +94,43 @@ body {
   margin-right: 16px;
 }
 
-.main-footer p{
+.main-footer p {
   margin-left: 16px;
 }
 
-
 /*SIGN UP / LOGIN*/
+.Signup {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .signup-form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+.signup-form-content div {
+  height: 40px;
+  margin-bottom: 15px;
+}
+
 .datepicker {
-  max-width: 212px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 5px !important;
 }
 
 .datepicker label {
-  color: rgb(145, 129, 129);
+  color: rgb(136, 135, 135);
+  margin-top: -7px;
 }
 
 /* Carousel  */
@@ -136,4 +152,3 @@ body {
   padding: 1rem;
   border-radius: 5px;
 }
-

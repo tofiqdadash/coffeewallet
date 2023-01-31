@@ -10,8 +10,11 @@ import seattles from "../logos/seattles.jpg";
 import spotcoffee from "../logos/spotcoffee.jpg";
 import starbucks from "../logos/starbucks.png";
 import Button from "@mui/material/Button";
+import { useNavigate } from "react-router-dom";
 
 const OurPartners = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="our-partners">
       <h2>Our Partners</h2>
@@ -84,7 +87,11 @@ const OurPartners = () => {
         </Marquee>
       </div>
 
-      <Button variant="contained" className="apply-partnership">
+      <Button
+        variant="contained"
+        className="apply-partnership"
+        onClick={() => navigate("/signupforcompany")}
+      >
         Apply for partnership
       </Button>
     </div>

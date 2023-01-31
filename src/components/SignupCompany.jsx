@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { Box, Button, TextField, Typography } from "@mui/material";
-import { DatePicker } from "@mui/x-date-pickers";
 import { FormControl, OutlinedInput } from "@mui/material";
+import FormGroup from "@mui/material/FormGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Checkbox from "@mui/material/Checkbox";
 
-const Signup = () => {
+const SignupCompany = () => {
   const [isSignUp, setIsSignUp] = useState(false);
-  const [value, setValue] = useState(null);
   const [insideN, setInsideN] = useState("");
 
   const handleChangeN = (event) => setInsideN(event.target.value);
@@ -26,25 +27,21 @@ const Signup = () => {
           borderRadius={5}
         >
           <Typography variant="h3" padding={3} textAlign="center">
-            {isSignUp ? "Sign up" : "Login"}
+            {isSignUp ? "Apply" : "Login"}
           </Typography>
           {isSignUp && (
-            <TextField type={"text"} variant="outlined" placeholder="Name" />
+            <TextField
+              type={"text"}
+              variant="outlined"
+              placeholder="Coffee shop name"
+            />
           )}
 
           {isSignUp && (
-            <TextField type={"text"} variant="outlined" placeholder="Surname" />
-          )}
-
-          {isSignUp && (
-            <DatePicker
-              className="datepicker"
-              label="Your birthday"
-              value={value}
-              onChange={(newValue) => {
-                setValue(newValue);
-              }}
-              renderInput={(params) => <TextField {...params} />}
+            <TextField
+              type={"text"}
+              variant="outlined"
+              placeholder="Number of locations"
             />
           )}
 
@@ -58,7 +55,7 @@ const Signup = () => {
                 variant="outlined"
                 value={insideN}
                 onChange={handleChangeN}
-                placeholder="Number"
+                placeholder="Contact number"
               />
             </FormControl>
           )}
@@ -67,15 +64,34 @@ const Signup = () => {
             <TextField
               type={"text"}
               variant="outlined"
-              placeholder="Current living address"
+              placeholder="Enter Voen"
             />
           )}
 
-          <TextField
-            type={"password"}
-            variant="outlined"
-            placeholder="Password"
-          />
+          {isSignUp && (
+            <TextField
+              type={"text"}
+              variant="outlined"
+              placeholder="Contact person"
+            />
+          )}
+
+          {isSignUp && (
+            <FormGroup className="form-group">
+              <FormControlLabel
+                control={<Checkbox  />}
+                label="Read Agree Terms / Conditions"
+              />
+            </FormGroup>
+          )}
+
+          {!isSignUp && (
+            <TextField
+              type={"password"}
+              variant="outlined"
+              placeholder="Password"
+            />
+          )}
 
           {/* Login button */}
           <Button
@@ -83,12 +99,12 @@ const Signup = () => {
             variant="contained"
             color="success"
           >
-            {isSignUp ? "Sign up as a User" : "Login as a User"}
+            {isSignUp ? "Apply" : "Login"}
           </Button>
 
           {/* Change to sign up button */}
           <Button sx={{ marginTop: 2 }} onClick={() => setIsSignUp(!isSignUp)}>
-            Change to {isSignUp ? "Login" : "Sign up"}
+            Change to {isSignUp ? "Login" : "Apply"}
           </Button>
         </Box>
       </form>
@@ -96,4 +112,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default SignupCompany;

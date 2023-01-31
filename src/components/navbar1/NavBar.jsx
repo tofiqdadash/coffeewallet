@@ -23,17 +23,17 @@ const NavBar = () => {
 
             <li className="nav-item">
               <NavLink
-                to="/partners"
+                to="/signupforcompany"
                 className="nav-links"
                 onClick={handleClick}
               >
-                Our partners
+                Apply for Partnership / Sign in
               </NavLink>
             </li>
 
             <li className="nav-item">
-              <NavLink to="/signup" className="nav-links" onClick={handleClick}>
-                Sign up / Login
+              <NavLink to="/signupforuser" className="nav-links" onClick={handleClick}>
+                User sign up / login 
               </NavLink>
             </li>
           </ul>
