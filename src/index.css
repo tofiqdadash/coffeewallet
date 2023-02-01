@@ -61,6 +61,13 @@ body {
   height: 100%;
   display: flex;
   padding: 15px;
+  position: relative;
+}
+
+.about .nav-container{
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .about h2 {
@@ -104,6 +111,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: -1;
+}
+
+.Signup .nav-container{
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .signup-form-content {
@@ -118,6 +132,7 @@ body {
 .signup-form-content div {
   height: 40px;
   margin-bottom: 15px;
+  z-index: -1;
 }
 
 .datepicker {
@@ -152,3 +167,67 @@ body {
   padding: 1rem;
   border-radius: 5px;
 }
+
+/*User profile*/
+.userprofile{
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.userprofile nav{
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.userprofile nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 16px;
+  padding-right: 25px;
+  color: white;
+  background-color: #49372e;
+}
+
+.userprofile .user{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 10px;
+}
+
+.userprofile .user img{
+   border-radius: 50%;
+   height: 60px;
+   width: 60px;
+   margin-left: 14px;
+}
+
+.userprofile .user h4{
+   color: #3c2a21;
+}
+
+
+.userprofile .profile-nav{
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.userprofile .profile-nav button{
+  background-color: #3c2a21;
+  color: white;
+  width: 250px;
+  cursor: pointer;
+}
+

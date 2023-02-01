@@ -4,11 +4,12 @@ import Carousel from "./carousel/Carousel";
 import OurPartners from "./OurPartners";
 import appstore from "../coffeephotos/appstore.jpeg";
 import playstore from "../coffeephotos/playstore.jpeg";
+import NavBar from './navbar1/NavBar';
 
 const Home = () => {
   return (
-    <div>
-      {/* <Slider /> */}
+    <div className="Home">
+      <NavBar />
       <Carousel />
       <OurPartners />
       <div className="our-app">

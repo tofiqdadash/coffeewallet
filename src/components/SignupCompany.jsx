@@ -4,6 +4,7 @@ import { FormControl, OutlinedInput } from "@mui/material";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
+import NavBar from './navbar1/NavBar';
 
 const SignupCompany = () => {
   const [isSignUp, setIsSignUp] = useState(false);
@@ -13,6 +14,7 @@ const SignupCompany = () => {
 
   return (
     <div className="Signup">
+      <NavBar />
       <form className="signupuser">
         <Box
           className="signup-form-content"

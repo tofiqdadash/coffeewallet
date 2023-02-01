@@ -2,16 +2,20 @@ import React, { useState } from "react";
 import { Box, Button, TextField, Typography } from "@mui/material";
 import { DatePicker } from "@mui/x-date-pickers";
 import { FormControl, OutlinedInput } from "@mui/material";
+import { useNavigate } from "react-router-dom";
+import NavBar from './navbar1/NavBar';
 
 const Signup = () => {
   const [isSignUp, setIsSignUp] = useState(false);
   const [value, setValue] = useState(null);
   const [insideN, setInsideN] = useState("");
+  const navigate = useNavigate();
 
   const handleChangeN = (event) => setInsideN(event.target.value);
 
   return (
     <div className="Signup">
+      <NavBar />
       <form className="signupuser">
         <Box
           className="signup-form-content"
@@ -82,6 +86,8 @@ const Signup = () => {
             sx={{ marginTop: 3, borderRadius: 3 }}
             variant="contained"
             color="success"
+            onClick={() => navigate("/userprofile")
+          }
           >
             {isSignUp ? "Sign up as a User" : "Login as a User"}
           </Button>

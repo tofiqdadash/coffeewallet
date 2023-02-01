@@ -1,8 +1,11 @@
 import React from "react";
+import NavBar from './navbar1/NavBar';
+
 
 const AboutUs = () => {
   return (
     <div className="about">
+      <NavBar />
       <div className="content">
         <h2>Who we are?</h2>
         <h3>
