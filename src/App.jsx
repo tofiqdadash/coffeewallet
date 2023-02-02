@@ -9,8 +9,12 @@ import Footer from "./components/Footer";
 import SignupCompany from "./components/SignupCompany";
 import { BrowserRouter as Router } from "react-router-dom";
 import UserProfile from "./components/UserProfile";
+import MyCashBackBalance from "./components/MyCashBackBalance";
+import OrderCoffee from "./components/OrderCoffee";
+import TransactionHistory from "./components/TransactionHistory";
+import MyNotifications from "./components/MyNotifications";
 
-function App() {
+function App({ text }) {
   return (
     <Router>
       <LocalizationProvider dateAdapter={AdapterDateFns}>
@@ -22,7 +26,20 @@ function App() {
               <Route path="/about" element={<AboutUs />} />
               <Route path="/signupforuser" element={<Signup />} />
               <Route path="/signupforcompany" element={<SignupCompany />} />
-              <Route path="/userprofile" element={<UserProfile />} />
+              <Route
+                path="/userprofile"
+                element={<UserProfile text={text} />}
+              />
+              <Route
+                path="/cashbackbalance"
+                element={<MyCashBackBalance text={text} />}
+              />
+              <Route path="/ordercoffee" element={<OrderCoffee />} />
+              <Route
+                path="/transactionhistory"
+                element={<TransactionHistory />}
+              />
+              <Route path="/mynotifications" element={<MyNotifications />} />
             </Routes>
           </div>
           <Footer />
